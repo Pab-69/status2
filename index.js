@@ -108,13 +108,13 @@ function templatizeString(text, parameters) {
 
 function getStatusText(color) {
   return color == "nodata"
-    ? "No Data Available"
+    ? "Pas d'information"
     : color == "success"
-    ? "Fully Operational"
+    ? "Opérationelle"
     : color == "failure"
-    ? "Major Outage"
+    ? "Panne majeur"
     : color == "partial"
-    ? "Partial Outage"
+    ? "Panne partiel"
     : "Unknown";
 }
 
