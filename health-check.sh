@@ -3,7 +3,7 @@
 # later upstream merges messy for anyone who forked us.
 commit=true
 origin=$(git remote get-url origin)
-if [[ $origin == *Pab-69/Status-Page* ]]
+if [[ $origin == *Pab-69/status2* ]]
 then
   commit=false
 fi
@@ -59,8 +59,8 @@ done
 if [[ $commit == true ]]
 then
   # Let's make Vijaye the most productive person on GitHub.
-  git config --global user.name 'Vijaye Raji'
-  git config --global user.email 'vijaye@statsig.com'
+  git config --global user.name 'Pab-69'
+  git config --global user.email 'pabperso17@gmail.com'
   git add -A --force logs/
   git commit -am '[Automated] Update Health Check Logs'
   git push
