@@ -3,7 +3,7 @@
 # later upstream merges messy for anyone who forked us.
 commit=true
 origin=$(git remote get-url origin)
-if [[ $origin == *Pab-69/Status-Page* ]]
+if [[ $origin == *Pab-69/status2* ]]
 then
   commit=false
 fi
